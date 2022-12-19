@@ -1,0 +1,16 @@
+{
+  "name": "fullviewpoc",
+  "version": "1.0.0",
+  "description": "This is a POC for the fullview project with TestCafe framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx testcafe chrome",
+    "report": "npx testcafe chrome --reporter html:reports/results.html,spec"
+  },
+  "author": "valilup",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^2.1.0",
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}
