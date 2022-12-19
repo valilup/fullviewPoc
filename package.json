@@ -10,6 +10,7 @@
   "author": "valilup",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "testcafe": "^2.1.0",
     "testcafe-reporter-html": "^1.4.6"
   }

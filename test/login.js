@@ -1,13 +1,14 @@
 import { t } from "testcafe";
 import landingPage from "../pages/landingPage";
 import dashboardPage from "../pages/dashboardPage";
+require('dotenv').config();
 
 fixture `Login into fullview app`
-    .page `https://dev.fullview.io/dashboard`;
+    .page `${process.env.BASE_URL}`;
 
 test('Login with valid credentials', async t => {
     // Log into fullview app with valid credentials
-    await landingPage.login('bati+dev@fullview.io', 'Test1234!');
+    await landingPage.login(`${process.env.QA_USER}`, `${process.env.QA_PASSWORD}`);
     // Dashboard should contain username
     await t.expect(dashboardPage.userName.visible).ok();
     // UserName should be 'Bati Dev'
