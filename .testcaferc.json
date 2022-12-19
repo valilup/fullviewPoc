@@ -1,0 +1,9 @@
+{
+    "screenshots": {
+        "path": "reports/screenshots/",
+        "takeOnFails": true,
+        "pathPattern": "${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}.png"
+      },
+    "skipJsErrors": true,
+    "concurrency": 1
+}
