@@ -1,9 +1,12 @@
 {
+  "src":"./src/test/*.js",
     "screenshots": {
         "path": "reports/screenshots/",
         "takeOnFails": true,
         "pathPattern": "${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}.png"
       },
     "skipJsErrors": true,
-    "concurrency": 1
+    "concurrency": 1,
+    "pageLoadTimeout": 10000,
+    "assertionTimeout": 10000
 }

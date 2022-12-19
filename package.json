@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx testcafe chrome",
-    "report": "npx testcafe chrome --reporter html:reports/results.html,spec"
+    "headless": "npx testcafe chrome:headless",
+    "report": "npx testcafe chrome --reporter html:reports/results.html,spec,list"
   },
   "author": "valilup",
   "license": "ISC",
