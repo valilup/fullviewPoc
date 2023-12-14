@@ -2,7 +2,7 @@ import { t, Selector } from "testcafe";
 
 class EditAccountPage{
     constructor(){
-        this.logoutButton = Selector('.sc-fWHiwC.jXmhHO').withText('Logout');
+        this.logoutButton = Selector('button').withText('Logout');
     }
 }
 

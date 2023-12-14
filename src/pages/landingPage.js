@@ -2,9 +2,9 @@ import { Selector, t } from "testcafe";
 
 class LandingPage{
     constructor(){
-        this.emailInput = Selector('#mui-1');
-        this.passwordInput = Selector('#mui-2');
-        this.signInButton = Selector('.sc-fWHiwC.crxPRH');
+        this.emailInput = Selector('[type="email"]');
+        this.passwordInput = Selector('[type="password"]');
+        this.signInButton = Selector('[type="submit"]');
     }
 
     async login(email, password){

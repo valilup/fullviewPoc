@@ -6,13 +6,13 @@
   "scripts": {
     "test": "npx testcafe chrome",
     "headless": "npx testcafe chrome:headless",
-    "report": "npx testcafe chrome --reporter html:reports/results.html,spec,list"
+    "report": "npx testcafe chrome --reporter html:reports/results.html"
   },
   "author": "valilup",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.0.3",
-    "testcafe": "^2.1.0",
+    "dotenv": "^16.3.1",
+    "testcafe": "^3.4.0",
     "testcafe-reporter-html": "^1.4.6"
   }
 }

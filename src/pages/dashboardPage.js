@@ -2,7 +2,7 @@ import { Selector } from "testcafe";
 
 class DashboarPage{
     constructor(){
-        this.userName = Selector('h3[class="ellipsis"]');
+        this.userName = Selector('h4[class*="medium ellipsis"]');
     }
 }
 

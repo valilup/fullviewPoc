@@ -13,7 +13,7 @@ fixture `Fullview POC`
     // Log into fullview app with valid credentials
     await landingPage.login(`${process.env.QA_USER}`, `${process.env.QA_PASSWORD}`);
     // The URL should contain dashboard
-    await t.expect(getCurrentUrl()).contains('dashboard');
+    await t.expect(getCurrentUrl()).contains('customers');
     });
 
 test('Successfull Login ', async t => {
